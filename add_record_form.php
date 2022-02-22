@@ -14,11 +14,11 @@ $statement->closeCursor();
 include('includes/header.php');
 ?>
         <h1>Add Record</h1>
-        <form action="add_record.php" method="post" enctype="multipart/form-data"
+        <form class="form-control" action="add_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
 
-            <label>Category:</label>
-            <select name="category_id">
+            <label class="form-label">Category:</label>
+            <select class="form-select" name="category_id">
             <?php foreach ($categories as $category) : ?>
                 <option value="<?php echo $category['categoryID']; ?>">
                     <?php echo $category['categoryName']; ?>
@@ -26,20 +26,20 @@ include('includes/header.php');
             <?php endforeach; ?>
             </select>
             <br>
-            <label>Name:</label>
-            <input type="input" name="name">
+            <label class="form-label">Name:</label>
+            <input class="form-control" type="input" name="name" required>
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price">
+            <label class="form-label">List Price:</label>
+            <input class="form-control" type="input" name="price" placeholder="Must be between €1-€9" pattern="[0-9]">
             <br>        
             
-            <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
+            <label class="form-label">Image:</label>
+            <input class="form-control" type="file" name="image" accept="image/*" />
             <br>
             
             <label>&nbsp;</label>
-            <input type="submit" value="Add Record">
+            <input class="form-control btn btn-success" type="submit" value="Add Record">
             <br>
         </form>
         <p><a href="index.php">View Homepage</a></p>
