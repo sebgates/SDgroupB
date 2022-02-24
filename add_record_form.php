@@ -27,11 +27,11 @@ include('includes/header.php');
             </select>
             <br>
             <label class="form-label">Name:</label>
-            <input class="form-control" type="input" name="name" required>
+            <input class="form-control" type="input" name="name" >
             <br>
 
             <label class="form-label">List Price:</label>
-            <input class="form-control" type="input" name="price" placeholder="Must be between €1-€9" pattern="[0-9]">
+            <input class="form-control" type="input" name="price"">
             <br>        
             
             <label class="form-label">Image:</label>
