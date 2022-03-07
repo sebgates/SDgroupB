@@ -1,23 +1,23 @@
 /*Header styles under here*/
-header {
-  margin: 0;
-  border-bottom: 2px solid black;
-}
-
-header h1 {
-  margin: 0;
-  padding: .5em 0;
-  color: black;
-}
-
 /*Body styles under here*/
 body {
-  color: red;
+  background-color: #ccc;
 }
 
 h1 {
   color: #4267B2;
+  font-family: 'Lobster', cursive;
   font-size: 5rem;
+}
+
+.container {
+  /* margin-top: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  padding: .5em 2em;
 }
 
 /*Footer styles under here*/
