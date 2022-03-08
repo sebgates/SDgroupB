@@ -1,4 +1,4 @@
-# PHP forum
+# Off Licence store store manager
 A starter project for DkIT students on the Server-Side module.
 ### Instructions
 * Create a MySQL database called php-crud in PHP MyAdmin
